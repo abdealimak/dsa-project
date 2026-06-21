@@ -1,34 +1,36 @@
 # 2.1 Project Title
 
-**Ocean Environmental Monitoring System**
+**Case Study 186: Ocean Pollution Tracking and Cleanup System**
+*(ITM Skills University - B.Tech CSE 2025-29 | Data Structure & Algorithms with CPP | Semester II)*
 
 # 2.2 Problem Statement
 
-Efficiently tracking, prioritizing, and mitigating ocean pollution spills across interconnected maritime regions is a complex logistical challenge. Environmental agencies need robust software to process real-time telemetry from remote ocean sensors, predict the spread of hazardous materials, and efficiently deploy cleanup resources. Without an optimized, algorithmically sound system, responses can be delayed and cleanup vessels may take sub-optimal routes, leading to catastrophic environmental damage.
+Marine pollution poses a serious threat to ecosystems, biodiversity, and human health. Oil spills, plastic waste, industrial discharge, and chemical contamination can spread rapidly through interconnected ocean regions. Effective environmental protection requires continuous monitoring and coordinated cleanup operations. The **Ocean Pollution Tracking and Cleanup System** provides real-time pollution monitoring, contamination analysis, spread prediction, and cleanup resource allocation.
 
 # 2.3 Objectives
 
-- **Live Data Ingestion**: Continuously accept and queue telemetry sensor packets representing new pollution incidents.
-- **Real-Time Monitoring**: Maintain a dynamically updating visual dashboard of regional contamination metrics.
-- **Priority Ranking**: Accurately rank oceanic regions by their current pollution severity to direct emergency responses.
-- **Spread Prediction**: Forecast how a localized spill will organically spread through maritime pathways.
-- **Optimal Routing**: Calculate the fastest and shortest navigation path for cleanup vessels dispatched from the base.
-- **Audit Reporting**: Generate automated, persistent environmental audit logs based on current internal states.
+The primary objective is to track marine pollution, predict contamination spread, rank affected regions, and optimize cleanup operations through intelligent data analysis. 
+
+**Industry Context:** Environmental agencies deploy thousands of ocean sensors that continuously measure pollution indicators such as chemical concentration, oil presence, and water quality. Rapid detection and response are critical for minimizing environmental damage.
 
 # 2.4 System Overview / Architecture
 
 The system is built as a C++ Command-Line Interface (CLI) application centered around a graph-based simulation model. 
 - **Core Engine (`OceanSystem` Class)**: Encapsulates all data layers, maintaining the oceanic network graph, processing queues, and storing state.
 - **Graph Representation**: Oceanic regions act as nodes, while interconnected maritime travel paths act as edges.
-- **Controller Interface**: A continuous, menu-driven CLI controller interacts with the `OceanSystem` class to trigger algorithmic evaluations and render the visual dashboard updates to the terminal stdout.
+- **Deliverables**: The architecture is designed to provide:
+  - Pollution monitoring dashboards.
+  - Spread prediction tools.
+  - Cleanup scheduling systems.
+  - Environmental reports.
+  - Emergency response alerts.
 
 # 2.5 Data Structures and Algorithms Used
 
-1. **Graph Representation (Adjacency List)**: Implemented using a `std::vector<std::vector<std::pair<int, int>>>` to map connected oceanic regions and the travel times between them.
-2. **FIFO Queue (`std::queue`)**: Utilized to buffer and process incoming stream data (sensor telemetry packets) in a strict First-In, First-Out order.
-3. **Merge Sort Algorithm**: A custom implementation used to evaluate and sort regions based on their accumulated pollution levels in `O(N log N)` time.
-4. **Breadth-First Search (BFS)**: Uses a queue and visited array to explore outward from a contamination source, layer by layer, predicting the vector expansion of a spill.
-5. **Dijkstra's Algorithm**: Utilizes a Min-Priority Queue (`std::priority_queue`) to efficiently resolve the optimal pathing on a weighted graph, determining the most rapid trajectory for cleanup vessels.
+1. **Sensor Data Processing Using Queue (`std::queue`)**: Incoming sensor readings are processed sequentially using a Queue. This ensures timely handling of real-time environmental data.
+2. **Pollution Ranking Using Merge Sort**: Ocean regions are ranked according to contamination levels using Merge Sort. Its stability and efficiency make it suitable for processing large environmental datasets.
+3. **Pollution Spread Detection Using BFS**: Connected ocean regions are represented as graph nodes. BFS analyzes how contamination spreads across neighboring regions, helping authorities predict future impact zones.
+4. **Cleanup Vessel Assignment Using Shortest Path Algorithms (Dijkstra's)**: Cleanup vessels are assigned to affected regions using shortest-path calculations to minimize travel time and improve emergency response effectiveness.
 
 # 2.6 Implementation Approach
 
@@ -40,7 +42,7 @@ The project follows a modular, Object-Oriented Programming (OOP) methodology:
 
 # 2.7 Time and Space Complexity Analysis
 
-- **Data Ingestion & Dequeueing**: 
+- **Data Ingestion & Dequeueing (Queue)**: 
   - Time Complexity: `O(1)` per packet.
   - Space Complexity: `O(Q)` where `Q` is the number of queued packets.
 - **Merge Sort (Pollution Ranking)**:
@@ -132,4 +134,4 @@ The system successfully ingests real-time simulated telemetry data from a file p
 
 # 2.12 Conclusion
 
-The Ocean Environmental Monitoring System demonstrates the highly practical application of core Data Structures and Algorithms to solve complex environmental and logistical problems. By translating physical geographic zones into a mathematical graph and employing classical algorithms like BFS and Dijkstra's, the software achieves predictable, optimized, and fast computational results. The modular CLI design establishes a strong foundation that can be easily extended in the future to include graphical user interfaces (GUIs), database integrations, and dynamic edge-weight updating based on live weather data.
+The Ocean Pollution Tracking and Cleanup System illustrates how Queue, Merge Sort, BFS, and graph algorithms support environmental conservation and disaster response efforts. The system successfully meets the deliverables by providing pollution monitoring dashboards, spread prediction tools, cleanup scheduling systems, environmental reports, and emergency response alerts. The modular CLI design establishes a strong foundation that can be easily extended in the future to include graphical user interfaces (GUIs), database integrations, and dynamic edge-weight updating based on live weather data.
