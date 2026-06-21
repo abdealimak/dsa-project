@@ -1,5 +1,4 @@
 # Ocean Pollution Tracking and Cleanup System
-
 ---
 
 ## Project Title
