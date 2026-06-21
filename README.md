@@ -207,8 +207,6 @@ Region ID [5] -> Name: Industrial Delta | Total Contamination Load: 30 units
 
 ## Screenshots
 
-> Run the program yourself and paste terminal screenshots of the live dashboard here for submission — for example, a screenshot after Option 1 (queue populated), after Option 2 (pollution bars filled in), and after Option 4 or 5 (spread/routing output). The dashboard's `[#####----------]` bars and live queue stream make for clear, visual screenshots.
-
 ```text
 =================================================================
                LIVE OCEAN GRAPH MONITORING DASHBOARD             
