@@ -1,0 +1,15 @@
+====================================================
+    ECO-LOGISTICS MARITIME INTELLIGENCE REPORT      
+====================================================
+
+Active Incidents Awaiting Processing Queue: 0
+
+CURRENT POLLUTION METRICS BY REGION:
+----------------------------------------------------
+Region ID [1] -> Name: North Port (Base) | Total Contamination Load: 0 units
+Region ID [2] -> Name: Coral Reef Matrix | Total Contamination Load: 50 units
+Region ID [3] -> Name: Deep Oceanic Trench | Total Contamination Load: 0 units
+Region ID [4] -> Name: Eastern Trade Gulf | Total Contamination Load: 20 units
+Region ID [5] -> Name: Industrial Delta | Total Contamination Load: 140 units
+
+================= END OF REPORT ====================
