@@ -207,57 +207,15 @@ Region ID [5] -> Name: Industrial Delta | Total Contamination Load: 30 units
 
 ## Screenshots
 
-```text
-=================================================================
-               LIVE OCEAN GRAPH MONITORING DASHBOARD             
-=================================================================
-REGIONAL CONTAMINATION LEVELS:
-ID [1] North Port (Base)      : [---------------] (0 Units)
-ID [2] Coral Reef Matrix      : [---------------] (0 Units)
-ID [3] Deep Oceanic Trench    : [---------------] (0 Units)
-ID [4] Eastern Trade Gulf     : [---------------] (0 Units)
-ID [5] Industrial Delta       : [---------------] (0 Units)
------------------------------------------------------------------
-LIVE INGESTION QUEUE STREAM:
- [Front] -> Packet#7001 (Reg 1) -> Packet#7002 (Reg 2) -> Packet#7003 (Reg 3) -> Packet#7004 (Reg 4) -> [3 more] -> [Back]
-=================================================================
-```
-```text
-=================================================================
-               LIVE OCEAN GRAPH MONITORING DASHBOARD             
-=================================================================
-REGIONAL CONTAMINATION LEVELS:
-ID [1] North Port (Base)      : [###------------] (35 Units)
-ID [2] Coral Reef Matrix      : [####-----------] (40 Units)
-ID [3] Deep Oceanic Trench    : [#--------------] (15 Units)
-ID [4] Eastern Trade Gulf     : [########-------] (80 Units)
-ID [5] Industrial Delta       : [###------------] (30 Units)
------------------------------------------------------------------
-LIVE INGESTION QUEUE STREAM:
- [Empty] - No pending telemetry packets.
-=================================================================
-```
-```text
---- Priority Sorting Assessment (Merge Sort) ---
-Ranked Impact Hierarchy:
- 1. Eastern Trade Gulf (Level: 80)
- 2. Coral Reef Matrix (Level: 40)
- 3. North Port (Base) (Level: 35)
- 4. Industrial Delta (Level: 30)
- 5. Deep Oceanic Trench (Level: 15)
-```
-```text
---- Environmental Vector Expansion Forecasting (BFS) ---
- [!] Spread Layer 1 Alert: Contamination expanding to -> Coral Reef Matrix
- [!] Spread Layer 1 Alert: Contamination expanding to -> Eastern Trade Gulf
- [!] Spread Layer 2 Alert: Contamination expanding to -> Deep Oceanic Trench
- [!] Spread Layer 2 Alert: Contamination expanding to -> Industrial Delta
-```
-```text
---- Calculating Interconnected Travel Vectors (Dijkstra) ---
-Vessel Vector Confirmed. Transit Estimate: 9 hours.
-Navigation Leg: North Port (Base) -> Coral Reef Matrix -> Eastern Trade Gulf -> Industrial Delta
-```
+![Dashboard after loading sensor data](screenshots/screenshot1.png)
+
+![Dashboard after processing queue](screenshots/screenshot2.png)
+
+![Merge Sort ranked output](screenshots/screenshot3.png)
+
+![BFS spread forecast output](screenshots/screenshot4.png)
+
+![Dijkstra routing output](screenshots/screenshot5.png)
 
 ## Results and Observations
 
