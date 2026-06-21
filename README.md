@@ -1,6 +1,4 @@
-# Project Title
-
-**Case Study 186: Ocean Pollution Tracking and Cleanup System**
+# Ocean Pollution Tracking and Cleanup System
 
 # Problem Statement
 
@@ -98,8 +96,6 @@ Region ID [5] -> Name: Industrial Delta | Total Contamination Load: 140 units
 ```
 
 # Screenshots
-
-*(Text-based visualization of the CLI Application Dashboard)*
 
 ```text
 =================================================================
