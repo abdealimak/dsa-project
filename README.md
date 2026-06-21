@@ -209,11 +209,57 @@ Region ID [5] -> Name: Industrial Delta | Total Contamination Load: 30 units
 
 > Run the program yourself and paste terminal screenshots of the live dashboard here for submission — for example, a screenshot after Option 1 (queue populated), after Option 2 (pollution bars filled in), and after Option 4 or 5 (spread/routing output). The dashboard's `[#####----------]` bars and live queue stream make for clear, visual screenshots.
 
-`[ Insert Screenshot 1: Dashboard after loading sensor data ]`
-`[ Insert Screenshot 2: Dashboard after processing queue, showing pollution bars ]`
-`[ Insert Screenshot 3: Merge Sort ranked output ]`
-`[ Insert Screenshot 4: BFS spread forecast output ]`
-`[ Insert Screenshot 5: Dijkstra routing output ]`
+```text
+=================================================================
+               LIVE OCEAN GRAPH MONITORING DASHBOARD             
+=================================================================
+REGIONAL CONTAMINATION LEVELS:
+ID [1] North Port (Base)      : [---------------] (0 Units)
+ID [2] Coral Reef Matrix      : [---------------] (0 Units)
+ID [3] Deep Oceanic Trench    : [---------------] (0 Units)
+ID [4] Eastern Trade Gulf     : [---------------] (0 Units)
+ID [5] Industrial Delta       : [---------------] (0 Units)
+-----------------------------------------------------------------
+LIVE INGESTION QUEUE STREAM:
+ [Front] -> Packet#7001 (Reg 1) -> Packet#7002 (Reg 2) -> Packet#7003 (Reg 3) -> Packet#7004 (Reg 4) -> [3 more] -> [Back]
+=================================================================
+```
+```text
+=================================================================
+               LIVE OCEAN GRAPH MONITORING DASHBOARD             
+=================================================================
+REGIONAL CONTAMINATION LEVELS:
+ID [1] North Port (Base)      : [###------------] (35 Units)
+ID [2] Coral Reef Matrix      : [####-----------] (40 Units)
+ID [3] Deep Oceanic Trench    : [#--------------] (15 Units)
+ID [4] Eastern Trade Gulf     : [########-------] (80 Units)
+ID [5] Industrial Delta       : [###------------] (30 Units)
+-----------------------------------------------------------------
+LIVE INGESTION QUEUE STREAM:
+ [Empty] - No pending telemetry packets.
+=================================================================
+```
+```text
+--- Priority Sorting Assessment (Merge Sort) ---
+Ranked Impact Hierarchy:
+ 1. Eastern Trade Gulf (Level: 80)
+ 2. Coral Reef Matrix (Level: 40)
+ 3. North Port (Base) (Level: 35)
+ 4. Industrial Delta (Level: 30)
+ 5. Deep Oceanic Trench (Level: 15)
+```
+```text
+--- Environmental Vector Expansion Forecasting (BFS) ---
+ [!] Spread Layer 1 Alert: Contamination expanding to -> Coral Reef Matrix
+ [!] Spread Layer 1 Alert: Contamination expanding to -> Eastern Trade Gulf
+ [!] Spread Layer 2 Alert: Contamination expanding to -> Deep Oceanic Trench
+ [!] Spread Layer 2 Alert: Contamination expanding to -> Industrial Delta
+```
+```text
+--- Calculating Interconnected Travel Vectors (Dijkstra) ---
+Vessel Vector Confirmed. Transit Estimate: 9 hours.
+Navigation Leg: North Port (Base) -> Coral Reef Matrix -> Eastern Trade Gulf -> Industrial Delta
+```
 
 ## Results and Observations
 
